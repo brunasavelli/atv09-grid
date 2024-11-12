@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'section section aside'
+    'article article aside'
+    'footer footer footer';
+    gap: 20px;
+    width: 35%;
+    padding: 25px;
+    background-color: black;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(50, 81, 255);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: rgb(98, 224, 255);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    grid-area: section;
+    background-color: rgb(255, 234, 42);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article{
+    grid-area: article;
+    background-color: rgb(250, 104, 78);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: rgb(255, 255, 255);
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(50, 81, 255);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
